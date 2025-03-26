@@ -1,0 +1,46 @@
+body {
+    box-sizing: border-box;
+}
+.contenedorNoticias {
+    font-size: 10px;
+    margin: 0;
+}
+.contenedor a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #8b0000;
+    transition: .2s ease;
+}
+.contenedor a:hover {
+    font-size: 22px;
+}
+.contenedor h6 {
+    text-align: left;
+    font-size: 20px;
+    margin: 5px;
+}
+.contenedorNoticias {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+grid-gap: 50px;
+margin: 50px auto;
+max-width: 1240px;
+padding: 10px;
+
+}
+.contenedor {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+  .contenedorNoticias {
+    width: auto;
+    display: block;
+}
+}
+
+
+
+
+
+

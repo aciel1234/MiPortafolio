@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Empresa Provncial Alimentaria Camagüey</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="estilonoticias.css">
+        <link rel="icon" type="image/jpg" href="img/logo.png">
+</head>
+
+<body>
+	
+	<header id="main-header" class="mainheader">
+		
+		<a id="logo-header" href="#">
+            <img src="img/logo.png" id='img-logo-empa'>
+			<span class="site-desc">Empresa Provincial Alimentaria Camagüey</span>
+		</a> <!-- / #logo-header -->
+
+		<nav id="menu">
+            <button class="nav-mobile" id="nav-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+			<ul class="nav-menu">
+			  <li><a href="index.html">Inicio</a></li>
+				<li><a href="atencion_poblacion.html">Atención a la Población</a></li>
+		<!--		<li><a href="ventas.html">Ventas</a></li> -->
+        <li><a href="efemerides.html">Efemérides</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+      <!--  <li><a href="login.html">Login</a></li> -->
+			</ul>
+		</nav><!-- / nav -->
+
+	</header><!-- / #main-header -->
+
+	
+	<section id="main-content">
+	
+		<article>	
+			<div class="noticia">
+                <img src="../img/pan1.jpg" alt="">
+                <h6>dia mes ano</h6>
+                <h6><b>titulo de noticia</b></h6>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nam commodi possimus labore est, officiis quis perferendis, inventore similique adipisci quidem enim veritatis sint eos nisi? Quis aut veniam doloremque.</h1>
+
+            </div>
+		</article> <!-- /article -->
+	
+	<hr>
+        <div class="container">
+            <h1>Opiniones</h1>
+            <div id="comentarios">
+                <!-- Aquí se mostrarán los comentarios -->
+            </div>
+            <hr>
+            <h2>Deja tu comentario:</h2>
+            <form id="formulario">
+                <label for="nombre">Nombre:</label><br> 
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="comentario">Comentario:</label><br>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea><br><br>
+                <div class="btn">
+                <button type="submit">Enviar Comentario</button>
+                </div>
+            </form>
+        </div>
+	
+	</section> <!-- / #main-content -->
+
+	<script src="../js/script_nav.js"></script>
+	
+	<script src="js/comentarios.js"></script>
+	
+	<footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>Síguenos en nuestras redes sociales</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/empresaprovincial.alimentariacamaguey.7/"><img id="face" src="../img/logo-facebook.svg" alt=""></a>
+                    <a href="https://twitter.com/EmpresaProvinc6"><img src="../img/logo-twitter.svg" id="twitt" alt=""></a>
+                    <a href="#"><img src="../img/logo-instagram.svg" id="inst" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small><b>Empresa Provincial Alimentaria Camagüey</b>. &copy; 2024. <br> 
+                Diseñado y Desarrollado por <strong>Lic. Aciel Olivera García</strong>.</small>
+        </div>
+    </footer> <!-- / #main-footer -->
+
+	
+</body>
+</html>

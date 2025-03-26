@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.arreglo {
+  height: auto;
+  margin: 20px;
+  width: 90%;
+  display: inline-flex; 
+  margin-left: 5%;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 10px rgba(0,0,0,.1);
+  background-color: white;
+  border-radius: 10px;
+}
+#contenidoArchivo {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+  border-top-right-radius: 10px;
+}
+hr {
+  margin: 0 auto;
+}
+.mesesDelAno {
+  border-right: 1px solid #333;
+  text-align: center;
+  height: 600px;
+}
+thead {
+  color: #8b0000;
+}
+table tr td {
+    border: 1px solid #333;
+    color: black;
+}
+table {
+    font-size: 20px;
+}
+#enero, #febrero, #marzo, #abril, #mayo, #junio,
+#julio, #agosto, #septiembre, #octubre,
+#noviembre, #diciembre {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #8b0000;
+    font-weight: bold;
+
+    &:active {
+      color: blue;
+      text-decoration: underline;
+  } 
+}
+
+    
+    
+ @media (max-width: 500px) {  
+  
+    #enero, #febrero, #marzo, #abril, #mayo, #junio, #julio, #agosto, #septiembre, #octubre, #noviembre, #diciembre {
+    font-size: 15px;
+    padding: 0;
+    }
+    .arreglo {
+      width: 100%;
+      margin: 0;
+    }
+    table {
+      font-size: 15px;
+    }
+ }
+    
+ 
+    
+   

@@ -1,0 +1,109 @@
+.noticia {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.noticia h6 {
+    font-size: 20px;
+    margin: 10px;
+}
+.noticia h1 {
+    font-size: 25px;
+    text-align: justify;
+    margin: 10px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+#comentarios {
+    margin: 20px 0;
+}
+
+.comentario {
+    background: #f9f9f9;
+    border-left: 4px solid #007bff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    resize: none; /* Evita que el área de texto cambie de tamaño */
+}
+
+input[type="text"]:focus, 
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        
+        width: 280px;
+    }
+
+    input[type="text"], 
+    textarea {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        padding: 8px; /* Menos padding */
+        
+    }
+
+    button {
+        font-size: 14px; /* Tamaño de fuente del botón más pequeño */
+        padding: 8px; /* Menos padding */
+        width: 200px;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
