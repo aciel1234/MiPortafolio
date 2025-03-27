@@ -5,10 +5,24 @@
 }
 
 body {
-    background: #111;
+    background-color: #333;
+}
+.container {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 300px;
+    max-height: 300px;
+}
+.cells {
+    border: 1px solid white;
+    height: 100px;
+    width: 100px;
+    color: white;
 }
 
-table {
+
+/* table {
     margin-top: 10%;
     display: grid;
     place-items: center;
@@ -21,3 +35,4 @@ td {
     background: white;
     text-align: center;
 }
+*/

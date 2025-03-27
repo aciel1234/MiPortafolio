@@ -1,4 +1,57 @@
-let cell = document.querySelectorAll('.cell');
+let container = document.getElementById('container');
+let playerTurn = 0;
+const combinaciones = [
+    [0,1,2],
+    [0,3,6],
+    [6,7,8],
+    [2,5,8],
+    [1,4,7],
+    [3,4,5],
+    [0,4,5],
+    [2,4,6],
+]
+for (let i = 0; i < 9; i++) {
+    let cells = document.createElement('div');
+    cells.classList.add('cells');
+    container.appendChild(cells);
+}
+
+container.addEventListener('click', (event) => {
+    let clickedCell = event.target;
+    if (clickedCell.classList == 'cells' && clickedCell.textContent == '' && playerTurn == 0) {
+        clickedCell.textContent = 'X';
+        playerTurn = 1;
+    } else if (clickedCell.classList == 'cells' && clickedCell.textContent == '' && playerTurn == 1) {
+        clickedCell.textContent = 'O';
+        playerTurn = '0';
+    }
+})
+
+function checkWinner() {
+    combinaciones.find((item) => {
+        if (item.filter((i)=> container.includes(i))) {
+            let confirmar = confirm('El jugador 1 ha ganado. ¿Desea comenzar un nuevo juego?');
+                if (confirmar == true) {
+                    newGame()
+                }
+            return item
+        } else if (item.filter((i)=> container.includes(i))) {
+            let confirmar = confirm('El jugador 2 ha ganado. ¿Desea comenzar un nuevo juego?');
+            if (confirmar == true) {
+                newGame()
+            }
+            return
+        }
+    })
+}
+
+ 
+ 
+ 
+ 
+ 
+ 
+ /* let cell = document.querySelectorAll('.cell');
 let playerTurn = 0;
 
 const combinaciones = [
@@ -65,3 +118,4 @@ function newGame() {
         playerTurn = 0;
     }
 }
+    */
