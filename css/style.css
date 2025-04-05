@@ -192,7 +192,7 @@ img {
 }
 .work .workbox .desc .icon {    
     display: inline-flex;
-    width: 20%;
+    width: 10%;
 }
 .work .workbox .desc .icon img:first-child {
     background-color: rgb(252, 86, 26);
