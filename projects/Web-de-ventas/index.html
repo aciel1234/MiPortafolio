@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica</title>
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body>
+    <main>
+    <!--seccion para el header-->
+<header>
+    <nav>
+            <img src="src/img/memoria.png" alt="">
+        <div class="empresa">
+            <h3>Mi Restaurante</h3>
+            <h4>EL mejor de todos</h4>
+        </div>
+
+        <ul>
+            <li><a href="#about-us">Sobre Nosotros</a></li>
+            <li><a href="#services">Nuestros Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>   
+</header>
+
+<div class="slider-content">
+    <h2>CON VARIEDAD DE PRODUCTOS Y SERVICIOS</h2>
+    <h3>A SU DISPOSICIÓN</h3>
+    <div class="images">
+        <div class="slide" id="img1"><img src="src/img/bg1.jpg" alt=""></div>
+        <div class="slide" id="img2"><img src="src/img/bg2.jpg" alt=""></div>
+        <div class="slide" id="img3"><img src="src/img/bg3.jpg" alt=""></div>
+        <div class="slide" id="img4"><img src="src/img/bg4.jpg" alt=""></div>
+        <div class="slide" id="img5"><img src="src/img/bg5.jpg" alt=""></div>
+    </div>
+</div>
+
+<!--seccion para el contenido principal-->
+<section id="main-section" class="main-section">
+    <div class="about-us">
+        <h2>Sobre Nosotros</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+             elit. Voluptatum neque maxime excepturi nostrum 
+             unde id! Omnis soluta blanditiis iusto ratione 
+             voluptatum pariatur excepturi modi repellat! Eum 
+             illo cupiditate voluptatibus modi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nam facere perspiciatis quaerat eum iste magnam aliquid labore, 
+            officia odio ab dolor, nostrum eos iure molestiae impedit delectus
+             vero nesciunt sapiente.</p>
+    </div>
+
+    <div id="services" class="services">
+        <h2>Nuestros Productos</h2>
+        <div class="servicios">
+            <div>
+                <h3>Reparación de equipos electrodomésticos</h3>
+                <img src="src/img/service1.jpg" alt="">
+            </div>
+            <div>
+                <h3>Este es otro servicio que hacemos</h3>
+                <img src="src/img/service2.jpg" alt="">
+            </div>
+            <div>
+                <h3>Este es otro servicio que hacemos</h3>
+                <img src="src/img/service3.jpg" alt="">
+            </div>
+            <div>
+                <h3>Este es otro servicio que hacemos</h3>
+                <img src="src/img/service4.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--seccion para el footer-->
+<div>
+    <footer>
+        <div>
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+
+        <div id="contacto">
+            <h2>Contacto</h2>
+            <form action="POST">
+                <p>Nombre y apellidos</p>
+                <input type="text" placeholder="Escribe tu nombre" required>
+                <p>Correo electrónico</p>
+                <input type="email" placeholder="Escribe tu nombre" required>
+                <p>Lo que solicita</p>
+                <textarea name="textarea" id="" cols="30" rows="10" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            
+        </div>
+
+        <p>&copy;Registrado bajo el nombre de Aciel Olivera García. 2025</p>
+    </footer>
+</div>
+</main>
+    <script src="src/script/main.js"></script>
+</body>
+</html>

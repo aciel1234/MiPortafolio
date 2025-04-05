@@ -12,7 +12,7 @@ body {
     place-content: center;
     grid-template-columns: repeat(3, 1fr);
     max-width: 300px;
-    max-height: 300px;
+    max-height: 300px;;
 }
 .cells {
     border: 1px solid white;
