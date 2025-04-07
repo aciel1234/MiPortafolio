@@ -20,7 +20,7 @@
         <ul>
             <li><a href="#about-us">Sobre Nosotros</a></li>
             <li><a href="#services">Nuestros Productos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#footer">Contacto</a></li>
         </ul>
     </nav>   
 </header>
@@ -39,36 +39,32 @@
 
 <!--seccion para el contenido principal-->
 <section id="main-section" class="main-section">
-    <div class="about-us">
+    <div class="about-us" id="about-us">
         <h2>Sobre Nosotros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-             elit. Voluptatum neque maxime excepturi nostrum 
-             unde id! Omnis soluta blanditiis iusto ratione 
-             voluptatum pariatur excepturi modi repellat! Eum 
-             illo cupiditate voluptatibus modi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Nam facere perspiciatis quaerat eum iste magnam aliquid labore, 
-            officia odio ab dolor, nostrum eos iure molestiae impedit delectus
-             vero nesciunt sapiente.</p>
+        <p>Esta es una Pequeña y Mediana Empresa (Mipyme) dedicada a la venta de productos 
+            alimenticios.</p>
+        <p>Nuestro objeto social es comercializar productos alimenticios a la población como cárnicos, lácteos,
+            enlatados, granos, entre otros; con el objetivo de satisfacer las necesidades alimenticias
+            de la población.</p>
     </div>
 
     <div id="services" class="services">
-        <h2>Nuestros Productos</h2>
+        <h2>Nuestros Servicios</h2>
         <div class="servicios">
-            <div>
-                <h3>Reparación de equipos electrodomésticos</h3>
+            <div class="services-container">
+                <h3>Reservaciones</h3>
                 <img src="src/img/service1.jpg" alt="">
             </div>
-            <div>
-                <h3>Este es otro servicio que hacemos</h3>
+            <div class="services-container">
+                <h3>Domicilio</h3>
                 <img src="src/img/service2.jpg" alt="">
             </div>
-            <div>
-                <h3>Este es otro servicio que hacemos</h3>
+            <div class="services-container">
+                <h3>Comestibles</h3>
                 <img src="src/img/service3.jpg" alt="">
             </div>
-            <div>
-                <h3>Este es otro servicio que hacemos</h3>
+            <div class="services-container">
+                <h3>Productos varios</h3>
                 <img src="src/img/service4.png" alt="">
             </div>
         </div>
@@ -77,17 +73,17 @@
 
 <!--seccion para el footer-->
 <div>
-    <footer>
-        <div>
-            <h4>Redes Sociales</h4>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
+    <footer id="footer">
+        <div class="social-container">
+            <h2>Redes Sociales</h2>
+                <div class="redes-sociales">
+                    <a href="#"><img src="src/img/logo-facebook.svg" alt="" class="face icon"></a>
+                    <a href="#"><img src="src/img/logo-instagram.svg" alt="" class="inst icon"></a>
+                    <a href="#"><img src="src/img/logo-twitter.svg" alt="" class="twit icon"></a>
+                </div>  
         </div>
 
-        <div id="contacto">
+        <div id="contacto" class="contacto">
             <h2>Contacto</h2>
             <form action="POST">
                 <p>Nombre y apellidos</p>
@@ -102,8 +98,11 @@
             
         </div>
 
-        <p>&copy;Registrado bajo el nombre de Aciel Olivera García. 2025</p>
+        
     </footer>
+    <div class="registrado">
+        <p>&copy;Registrado bajo el nombre de Aciel Olivera García. 2025</p>
+    </div>
 </div>
 </main>
     <script src="src/script/main.js"></script>
