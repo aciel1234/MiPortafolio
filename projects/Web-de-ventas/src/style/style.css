@@ -210,7 +210,7 @@ li a {
 .servicios {
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
 }
 .servicios img {
     width: 100%;
@@ -228,8 +228,11 @@ li a {
     border-radius: 5px;
     border: 5px solid white;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, .3);
+    transition: .5s ease;
 }
-
+.services-container a img:hover {
+    border: 5px solid #31323c;  
+}
 /* footer */
 footer {
     background-color: #E1DDD2;
