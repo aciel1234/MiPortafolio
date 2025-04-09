@@ -168,31 +168,6 @@ ol li {
         transform: translate(0);
     }
 }
-.buttons {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-}
-.buttons a {
-    height: 8px;
-    width: 30px;
-    border: 2px solid white;
-    margin: 0 5px;
-    border-radius: 10px;
-}
-.active {
-    transition: .5s;
-    transform: scale(0.999);
-    background: white;
-    animation: animate .4s;
-}
-@keyframes animate {
-    100% {
-        transform: scale(0.8);
-    }
-}
 /* main section*/
 .main-section {
     padding: 30px;
@@ -362,6 +337,7 @@ form button {
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
+        margin-right: -22px;
     }
     nav li {
         margin: 5px 0;
@@ -379,6 +355,9 @@ form button {
         height: 300px;
         top: 47%;
     }
+    .slider-content>h3 {
+        top: 70%;
+    }
     .main-section {
         margin-top: -150px;
     }
@@ -389,13 +368,27 @@ form button {
     }
     .about-us p {
         font-size: 15px;
+        text-wrap: balance;
     }
     .services h3 {
         font-size: 20px;
         padding: 0;
+        text-align: center;
+        margin-top: 10%;
+    }
+    .services {
+        padding-top:  5%;
+        width: 100%;
     }
     .servicios {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .services-container {
+        padding: 5%;
+        width: 100%;
+    }
+    .servicios img {
+        width: 100%;
     }
     form input, form textarea {
         border: 2px solid white;
