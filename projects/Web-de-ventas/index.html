@@ -19,7 +19,7 @@
 
         <ul>
             <li><a href="#about-us">Sobre Nosotros</a></li>
-            <li><a href="#services">Nuestros Productos</a></li>
+            <li><a href="#services">Servicios</a></li>
             <li><a href="#footer">Contacto</a></li>
         </ul>
     </nav>   
@@ -81,13 +81,13 @@
 
         <div id="contacto" class="contacto">
             <h2>Contacto</h2>
-            <form action="POST">
+            <form action="src/script/mail.php" method="post">
                 <p>Nombre y apellidos</p>
-                <input type="text" placeholder="Escribe tu nombre" required>
+                <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
                 <p>Correo electrónico</p>
-                <input type="email" placeholder="Escribe tu nombre" required>
+                <input type="email" name="correo" placeholder="Escribe tu nombre" required>
                 <p>Lo que solicita</p>
-                <textarea name="textarea" id="" cols="30" rows="10" required></textarea>
+                <textarea name="mensaje" id="" cols="30" rows="10" required></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
