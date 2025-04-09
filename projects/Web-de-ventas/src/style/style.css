@@ -69,6 +69,20 @@ li a {
     }
     
 }
+ol {
+    float: right;
+    
+}
+ol li {
+    list-style: none;
+    background-color: #6d6d6c;
+    height: 5px;
+    width: 30px;
+    border-radius: 10px;
+    margin: 5px;
+    display: none;
+    flex-direction: column;
+}
 .slider-content>h2 {
     position: absolute;
     top: 40%;
@@ -96,7 +110,7 @@ li a {
 }
 .slider-content {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 450px;
@@ -197,6 +211,8 @@ li a {
 }
 .about-us>p {
     font-size: 20px;
+    padding: 10px;
+    color: #31323c;
 }
 
 /* seccion servicios */
@@ -211,6 +227,7 @@ li a {
     display: grid;
     place-content: center;
     grid-template-columns: repeat(2, 2fr);
+    color: #31323c;
 }
 .servicios img {
     width: 100%;
@@ -245,6 +262,7 @@ footer {
 }
 footer h2 {
     text-decoration: underline;
+    color: #31323c;
 }
 .redes-sociales {
     padding: 20px;
@@ -287,6 +305,7 @@ form button {
     width: 20%;
     padding: 5px;
     margin-top: 10px;
+    margin-left: 15%;
     border-radius: 10px;
     border: 1px solid white;
     font-size: 15px;
@@ -318,8 +337,75 @@ form button {
     .slider-content {
         max-width: 800px auto;
         width: 90%;
+        top: 60%;
     }
-
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        place-content: center;
+    }
+    form button {
+        margin-left: 15%;
+    }
+}
+.mostrarLista {
+    display: flex;
+    background: rgba(255, 255, 255, 0.575);
+    color: white;
+    float: right;
+    width: 50%;
+    height: 100%;
+    line-height: 50px;
+}
+@media screen and (max-width: 550px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    nav li {
+        margin: 5px 0;
+    }
+    ol {
+        margin-top: -40px;
+        position: relative;
+        float: right;
+    }
+    ol li {
+        display: flex;
+    }
+    .slider-content {
+        width: 0 auto;
+        height: 300px;
+        top: 47%;
+    }
+    .main-section {
+        margin-top: -150px;
+    }
+    .about-us h2, .services h2 {
+        font-size: 25px;
+        text-align: center;
+        padding: 0;
+    }
+    .about-us p {
+        font-size: 15px;
+    }
+    .services h3 {
+        font-size: 20px;
+        padding: 0;
+    }
+    .servicios {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    form input, form textarea {
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 5px 5px;
+        width: 100%;
+    }
+    form button {
+        margin-left: 40%;
+    }
 }
 
 
