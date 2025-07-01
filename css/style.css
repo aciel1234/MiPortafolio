@@ -177,6 +177,15 @@ img {
     margin: 1.5rem 0;
     line-height: 1.5rem;
 }
+.about .certificado_container {
+    display: inline-flex;
+}
+.about .certificado {
+    max-width: 10%;
+}
+.about .work .workbox .desc .certificadoHTML {
+    transform: translateX(15%);
+}
 .about .work {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -194,16 +203,17 @@ img {
     display: inline-flex;
     width: 10%;
 }
-.work .workbox .desc .icon img:first-child {
+.work .workbox .desc .icon img {
+margin: 5px;
+border-radius: 5px;
+}
+.work .workbox .desc .icon img:nth-child(1) {
     background-color: rgb(252, 86, 26);
 }
-.work .workbox .desc .icon img {
+.work .workbox .desc .icon img:nth-child(2) {
     background-color: rgb(92, 223, 228);
-    margin: 5px;
-    transition: .5s ease;
-    border-radius: 5px;
 }
-.work .workbox .desc .icon img:last-child {
+.work .workbox .desc .icon img:nth-child(3) {
     background-color: yellow;
 }
 .work .workbox .desc {
