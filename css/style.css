@@ -240,6 +240,17 @@ border-radius: 5px;
     text-wrap: balance;
     transition: .5s;
 }
+.certificados-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.certificados-work .work .workbox {
+    width: 300px;
+}
+.certificados-work .work .workbox .desc {
+    width: 200px;
+}
 .about h2 {
     color: #f2f2f2;
     font-size: 2rem;
@@ -260,4 +271,8 @@ border-radius: 5px;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(4,auto);
     }
+    .certificados-work {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,auto);
+}
 }
