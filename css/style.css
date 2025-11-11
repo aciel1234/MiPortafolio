@@ -1,6 +1,7 @@
 :root {
     --background-color: #3c4043;
-    --header-list: #9aa9a6;
+    --back: #fff;
+    --header-list: #a8a58e;
     --header-border: #203031;
 
     --blanco: white;
@@ -12,388 +13,210 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 /* Estilos para el body */
 body {
-    font-family: sans-serif;
-    background: linear-gradient(var(--background-color), var(--header-border));
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    background: linear-gradient(var(--header-list), #f4d4af);
     display: grid;
     place-items: center;
     position: relative;
+    padding: 60px 0 40px;
+    color: #555;
 }
 
-/* Estilos para la sección principal */
-.main-content {
-    max-width: 900px;
-    width: 100%;
-    height: auto;
-    margin: 1%;
-    padding: 3%;
-}
-
-/* Estilos para el header y el menu de navegación */
-header {
-    padding: 10px;
-}
-header ul {
-    display: flex;
-    justify-content: space-between;
-}
-header ul li {
-    list-style: none;
-}
-header ul li a {
-    text-decoration: none;
-    color: var(--blanco);
-    position: relative;
-}
-header ul li a:hover {
-    color: var(--blanco);
-}
-header ul li a::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 3px;
-    background: var(--azul);
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%) scaleX(0);
-    transform-origin: center;
-    transition: transform 0.3s ease-in-out;
-}
-header ul li a:hover::after {
-    transform: translateX(-50%) scaleX(1);
-}
-hr {
-    color: var(--header-border);
-}
-
-/* Estilos sobre mi */
-.sobre-mi {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.sobre-mi .presentacion {
-    display: flex;
-    align-items: center;
-}
-.sobre-mi .presentacion .imagen {
-    max-width: 200px;
-}
-.sobre-mi .presentacion .imagen img {
-    width: 100%;
-    border-radius: 50%;
-}
-.sobre-mi .presentacion .nombre-disponibilidad {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-    align-items: center;
-}
-.sobre-mi .presentacion .nombre-disponibilidad h3 {
-    color: var(--blanco);
-}
-.sobre-mi .presentacion .nombre-disponibilidad h4 {
-    font-weight: lighter;
-    background: #203031;
-    padding: 10px 32px;
-    position: relative;
-    border-radius: 20px;
-    margin-top: 10px;
-}
-.sobre-mi .presentacion .nombre-disponibilidad h4 a {
-    text-decoration: none;
-    color: var(--blanco);
-    transition: .3s ease;
-}
-.sobre-mi .presentacion .nombre-disponibilidad h4 a:hover {
-    color: var(--azul);
-}
-.sobre-mi .presentacion .nombre-disponibilidad h4::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        45deg,
-        var(--header-list), #608385, #3a5152, #203031, var(--header-list), #608385, #3a5152, #203031
-    );
-    background-size: 800%;
-    border-radius: 10px;
-    filter: blur(5px);
-    animation: glowing 20s linear infinite;
-}
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 400% 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-.download-btn {
-    border: none;
-    background: var(--header-list);
-    color: var(--background-color);
-    border-radius: 5px;
-    margin-top: 10px;
-    padding: 5px 16px;
-    cursor: pointer;
-    transition: .5s ease;
-}
-.download-btn:hover {
-    background: var(--azul);
-    color: var(--blanco);
-}
-.sobre-mi p {
-    color: var(--header-list);
-}
-
-/* Sección de proyectos */
-.proyect-header {
+/* Estilos para el header */
+.presentacion {
+    color: #fff;
     text-align: center;
-    margin-bottom: 20px;
-    border-bottom: 1px solid var(--header-list);
-    width: 100%;
-    margin-bottom: 20px;
-    color: var(--blanco);
 }
-.proyectos, .certificados {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 32px;
+.presentacion h1 {
+    font-size: 63px;
 }
-.proyectos .card {
+.presentacion h1, .presentacion h3 {
     margin-top: 20px;
-    width: 100%;
+    margin-bottom: 12px;
+    font-weight: 400;
+    line-height: 1.1;
 }
-.proyectos .card img {
-    width: 100%;
-    border-radius: 8px;
-    height: auto;
+.icons a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    color: #fff;
+    padding: 20px;
 }
-.proyectos .card h4 {
-    color: var(--header-list);
-    font-weight: lighter;
-    margin-top: 10px;
-}
-.proyectos .card a {
-    text-decoration: none;
-    color: var(--blanco);
-    margin-top: 10px;
-}
-.proyectos .card a img {
-    transition: .5s ease;
-}
-.proyectos .card a img:hover {
-    transform: scale(1.1);
-}
-.proyectos .card .hab {
-    margin: 10px 0px;
-}
-.proyectos .card .hab img {
-    width: 25px;
-}
-.proyectos .card .hab img:nth-child(1) {
-    background-color: rgb(252, 86, 26);
-    border-radius: 10px;
-}
-.proyectos .card .hab img:nth-child(2) {
-    background-color: rgb(92, 223, 228);
-    border-radius: 10px;
-}
-.proyectos .card .hab img:nth-child(3) {
-    background-color: yellow;
-    border-radius: 10px;
-}
-.proyectos .card .hab img:nth-child(5) {
-    background-color: white;
-    border-radius: 10px;
-}
-
-
-/* Estilos para la sección de habilidades */
-.habilidades {
-    display: grid;
-    place-content: center;
+.icons a i {
+    display: inline-block;
     text-align: center;
-    margin-top: 50px;
 }
-.habilidades h3 {
-    color: var(--blanco);
-    border-bottom: 1px solid var(--header-list);
+.icons a:nth-child(1):hover {
+    color: rgb(0, 102, 255);
 }
-.habilidades .images {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-}
-.habilidades .images img:nth-child(1) {
-    width: 50px;
-    background-color: rgb(252, 86, 26);
-    border-radius: 10px;
-}
-.habilidades .images img:nth-child(2) {
-    width: 50px;
-    background-color: rgb(92, 223, 228);
-    border-radius: 10px;
-}
-.habilidades .images img:nth-child(3) {
-    width: 50px;
-    background-color: yellow;
-    border-radius: 10px;
-}
-.habilidades .images img:nth-child(4) {
-    width: 50px;
-}
-.habilidades .images img:nth-child(5) {
-    width: 50px;
-    background-color: white;
-    border-radius: 10px;
+.icons a:nth-child(2):hover {
+    color: rgb(0, 255, 55);
 }
 
-/* Estilos para los certificados */
-.cert-header {
-    color: var(--blanco);
-    text-align: center;
-    border-bottom: 1px solid var(--header-list);
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-.certificados .card a img {
-    width: 100%;
-    transition: .5s ease;
-    border-radius: 8px;
-}
-.certificados .card a img:hover {
-    transform: scale(1.1);
-}
 
-/* Estilos para el formulario de contacto y footer */
-footer {
-    margin-top: 50px;
-    background: var(--header-border);
-    padding-top: 50px;
+/* Contenedor principal */
+.main-container {
+    padding: 4rem;
+    font-size: 16px;
+    line-height: 1.58;
 }
 .container {
     width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 4rem;
+    margin-bottom: 30px;
 }
-.footer-content {
-    width: 33.3%;
-    text-align: center;
+.sobre-mi {
+    padding-bottom: 150px;
 }
-.footer h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    text-align: center;
+.container-header {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 27px;
 }
-.footer-content p {
-    color: var(--blanco);
-    width: 190px;
-    margin: auto;
-    padding: 7px;
+.imagen {
+    display: block;
+    height: auto;
+    float: left;
+    margin-right: 20px;
 }
-.footer-content a {
-    color: var(--blanco);
+.imagen img {
+    max-width: 200px;
+    width: 100%;
 }
-.footer-content ul {
-    text-align: center;
-}
-.list {
-    padding: 0;
-}
-.list li {
-    width: auto;
-    text-align: center;
-    list-style: none;
-    padding: 7px;
+.descripcion {
     position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.list li::before {
-    content: '';
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 100%;
-    width: 0;
-    height: 2px;
-    background: var(--azul);
-    transition: .5s ease;
+@media screen and (max-width: 700px) {
+    .imagen {
+        text-align: center;
+        float: none;
+        margin-bottom: 40px;
+    }
+    .sobre-mi {
+        padding-bottom: 50px;
+    }
 }
-.list li:hover::before {
-    width: 70px;
+.descripcion p {
+    margin: 0 0 12px;
 }
-.social-icons {
-    text-align: center;
-    padding: 0;
+
+/* Proyectos */
+.contenido-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
 }
-.social-icons li {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-    padding: 5px;
+.card {
+    margin-bottom: 30px;
 }
-.social-icons i {
-    color: white;
+.card img {
+    width: 100%;
+}
+.card h4 {
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+.card i {
     font-size: 25px;
 }
-footer h3 {
-    color: var(--header-list);
-    
+.fa-html5 {
+    color: rgb(255, 51, 0);
 }
-footer a {
+.fa-css {
+    color: rgb(0, 89, 255);
+}
+.fa-js {
+    color: rgb(255, 196, 0);
+}
+.fa-php {
+    color: rgb(0, 89, 255);
+}
+.fa-database {
+    color: rgb(4, 0, 255);
+}
+br {
+    margin-bottom: 15px;
+}
+.card a {
+    color: #fff;
+    background: #555;
+    padding: 15px 15px 10px;
+    border-radius: 15px;
+    width: 80px;
+    text-align: center;
     text-decoration: none;
 }
-footer a:hover {
-    color: var(--azul);
+.fa-link {
+    margin-right: 10px;
 }
-.social-icons i:hover {
-    color: var(--azul);
-}
-.bottom-bar {
-    background: var(--header-border);
+
+
+/* Habilidades */
+.habilidades {
     text-align: center;
-    padding: 10px 0;
-    margin-top: 50px;
-    border-top: 1px solid var(--background-color);
 }
-.bottom-bar p {
-    color: var(--header-list);
-    margin: 0;
-    font-size: 16px;
-    padding: 7px;
+.habilidades header {
+    text-align: left;
 }
-.bottom-bar a {
-    color: var(--azul);
+.habilidades i {
+    font-size: 50px;
+    margin: 20px;
+}
+
+
+/* Contacto */
+.contacto form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contacto form input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    background: #e4e4e4;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+textarea {
+    height: 200px;
+}
+.contacto form button {
+    width: 150px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(to right, #555, #af987e);
     transition: .5s ease;
+    font-size: 15px;
 }
-.bottom-bar a:hover {
-    color: var(--blanco);
+.contacto form button:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #af987e, #555);
 }
-@media screen and (max-width: 600px) {
-    header {
-        font-size: 12px;
-    }
-    .container {
-        display: block;
-    }
-    .footer-content {
-        margin-bottom: 50px;
-    }
-    .nombre-disponibilidad h4 {
-        font-size: 12px;
-    }
+
+
+/* Footer */
+footer .icons {
+    text-align: center;
+}
+footer .icons a {
+    color: #555;
 }
