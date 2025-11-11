@@ -78,26 +78,36 @@ body {
 .sobre-mi {
     padding-bottom: 150px;
 }
-.sobre-mi .work {
-    background: #e4e4e4;
+.sobre-mi .work, .sobre-mi .dwl {
     cursor: pointer;
-    border: none;
     padding: 10px 32px;
-    color: #555;
     font-weight: bold;
     position: relative;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 10px;
+    color: black;
+    background: transparent;
+    transition: .3s ease;
+}
+.sobre-mi .work {
+    border: 1px solid #81b1b3;
+}
+.sobre-mi .work i {
+    color: #81b1b3;
+    margin-right: 5px;
+}
+.sobre-mi .work:hover {
+    background: #d7edee;
 }
 .sobre-mi .dwl {
-    background: #555;
-    cursor: pointer;
-    border: none;
-    padding: 10px 32px;
-    color: #fff;
-    font-weight: bold;
-    position: relative;
-    border-radius: 20px;
+    border: 1px solid #555;
+}
+.sobre-mi .dwl:hover {
+    background: #e2e1e1;
+}
+.sobre-mi .dwl i {
+    color: #555;
+    margin-right: 5px;
 }
 .container-header {
     margin-top: 0;
@@ -172,13 +182,18 @@ br {
     margin-bottom: 15px;
 }
 .card a {
-    color: #fff;
-    background: #555;
+    color: #4882a8;
+    background: transparent;
+    border: 1px solid #4885a8;
     padding: 15px 15px 10px;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 80px;
     text-align: center;
     text-decoration: none;
+    transition: .3s ease;
+}
+.card a:hover {
+     background: #d7edee;
 }
 .fa-link {
     margin-right: 10px;
