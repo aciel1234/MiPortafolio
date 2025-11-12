@@ -130,16 +130,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-@media screen and (max-width: 700px) {
-    .imagen {
-        text-align: center;
-        float: none;
-        margin-bottom: 40px;
-    }
-    .sobre-mi {
-        padding-bottom: 50px;
-    }
-}
 .descripcion p {
     margin: 0 0 12px;
 }
@@ -219,4 +209,70 @@ footer .icons {
 }
 footer .icons a {
     color: #555;
+}
+
+/* Trayectoria laboral */
+.recta {
+    width: 100%;
+    border-left: 1px solid #555;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    height: 200px;
+}
+.trayectoria .point {
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 20px;
+    background: #4882a8;
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+}
+.recta .contenido-recta {
+    line-height: 30px;
+    margin-left: 30px;
+}
+.recta .contenido-recta h3 {
+    color: #4882a8;
+    font-weight: bold;
+}
+.recta .contenido-recta h4 {
+    font-weight: 600;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+    .imagen {
+        float: none;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 790px) {
+    .recta {
+    height: 300px;
+    display: block;
+}
+.contenido-info {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+}
+@media screen and (max-width: 600px) {
+    .recta {
+    height: 400px;
+}
+}
+@media screen and (max-width: 500px) {
+    body {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+    .main-container {
+        padding: 0;
+        margin: 4rem 0;
+    }
 }
