@@ -199,6 +199,10 @@ body {
   font-size: 24px;
   margin: 0 3px;
 }
+.card .tech i img {
+  width: 25px;
+  margin-bottom: -3px;
+}
 
 .fa-html5 { color: #ff3300; }
 .fa-css3-alt { color: #0059ff; }
