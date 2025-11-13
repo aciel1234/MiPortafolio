@@ -1,144 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Aciel Olivera</title>
     <link rel="shortcut icon" href="img/dev.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="Contrata a Aciel para crear tu aplicación web o móvil. Desarrollador Web. Especializado en crear aplicaciones únicas.">
+    <meta name="description" content="Contrata a Aciel Olivera para crear tu aplicación web o móvil. Desarrollador web especializado en crear soluciones únicas.">
     <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-        <header class="presentacion">
-            <h1>Aciel Olivera García</h1>
-            <h3>Web designer</h3>
-            <div class="icons">
-                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </header>
+    <header class="presentacion">
+        <h1>Aciel Olivera García</h1>
+        <h2>Web Designer</h2>
+        <div class="icons">
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </header>
 
-        <section class="main-container">
-            <div class="container sobre-mi">
-                <header class="container-header">
-                    <h3>Sobre mi</h3>
-                </header>
-                <div class="imagen">
-                    <img src="img/dev.jpg" alt="">
-                </div>
-                <div class="descripcion">
-                    <p>+1 año de experiencia en el campo del desarrollo web, he desarrollado proyectos para diferentes fines, tanto de Freelance como también para empresas, convirtiendo así, grandes problemas en soluciones sencillas y creativas.</p>
-                </div>
-                <div>
-                    <a href="mailto:acielito64@correo.com"><button class="work"><i class="fa-solid fa-envelope"></i>Disponible para trabajar</button></a>
-                    <a href="csv/acieloliveraCV.pdf" download><button class="dwl"><i class="fa-solid fa-download"></i>Descargar CSV</button></a>
-                </div>
+    <main class="main-container">
+        <!-- SOBRE MÍ -->
+        <section class="container sobre-mi" id="sobre-mi">
+            <header class="container-header">
+                <h3>Sobre mí</h3>
+            </header>
+            <div class="imagen">
+                <img src="img/dev.jpg" alt="Retrato de Aciel Olivera">
             </div>
+            <div class="descripcion">
+                <p>Más de un año de experiencia en el desarrollo web. He creado proyectos tanto para empresas como de manera freelance, transformando grandes problemas en soluciones simples y creativas.</p>
+            </div>
+            <div class="acciones">
+                <a href="mailto:acielito64@correo.com">
+                    <button class="work">
+                        <i class="fa-solid fa-envelope"></i> Disponible para trabajar
+                    </button>
+                </a>
+                <a href="cv/acieloliveraCV.pdf" download>
+                    <button class="dwl">
+                        <i class="fa-solid fa-download"></i> Descargar CV
+                    </button>
+                </a>
+            </div>
+        </section>
 
-            <div class="container proyectos">
-                <header class="container-header">
-                        <h3>Proyectos</h3>
-                </header>
-                <div class="contenido-proyectos">
-                    <div class="card">
-                        <img src="img/gestion_inventario.jpg" alt="">
-                        <h3>Aplicación web para la gestión de inventario</h3>
-                        <h4>Gestiona tu negocio de manera eficiente</h4>
+        <!-- PROYECTOS -->
+        <section class="container proyectos" id="proyectos">
+            <header class="container-header">
+                <h3>Proyectos</h3>
+            </header>
+            <div class="contenido-proyectos">
+
+                <article class="card">
+                    <img src="img/gestion_inventario.jpg" alt="Aplicación de gestión de inventario">
+                    <h3>Aplicación web para la gestión de inventario</h3>
+                    <h4>Gestiona tu negocio de manera eficiente</h4>
+                    <div class="tech">
                         <i class="fab fa-html5"></i>
-                        <i class="fab fa-css"></i>
+                        <i class="fab fa-css3-alt"></i>
                         <i class="fab fa-js"></i>
                         <i class="fab fa-php"></i>
                         <i class="fa fa-database"></i>
-                        <br>
-                        <a href="https://youtu.be/K2Yyni2WB18" target="_blank"><i class="fa-solid fa-link"></i>Preview</a>
                     </div>
+                    <a href="https://youtu.be/K2Yyni2WB18" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-link"></i> Preview
+                    </a>
+                </article>
 
-                    <div class="card">
-                        <img src="img/empa_poster.jpg" alt="">
-                        <h3>Web Empresarial de alimentos</h3>
-                        <h4>Página web para Empresa Provincial Alimentaria Camagüey</h4>
+                <article class="card">
+                    <img src="img/empa_poster.jpg" alt="Web Empresarial de alimentos">
+                    <h3>Web empresarial de alimentos</h3>
+                    <h4>Página web para Empresa Provincial Alimentaria Camagüey</h4>
+                    <div class="tech">
                         <i class="fab fa-html5"></i>
-                        <i class="fab fa-css"></i>
+                        <i class="fab fa-css3-alt"></i>
                         <i class="fab fa-js"></i>
-                        <br>
-                        <a href="projects/neocities-audiovisuales/index.html" target="_blank"><i class="fa-solid fa-link"></i>Preview</a>
                     </div>
+                    <a href="projects/neocities-audiovisuales/index.html" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-link"></i> Preview
+                    </a>
+                </article>
 
-                    <div class="card">
-                        <img src="img/cat_movies_poster.jpg" alt="">
-                        <h3>Catálogo de audiovisuales para negocio de grabación</h3>
-                        <h4>El mejor entretenimiento para todos</h4>
+                <article class="card">
+                    <img src="img/cat_movies_poster.jpg" alt="Catálogo de audiovisuales">
+                    <h3>Catálogo de audiovisuales</h3>
+                    <h4>El mejor entretenimiento para todos</h4>
+                    <div class="tech">
                         <i class="fab fa-html5"></i>
-                        <i class="fab fa-css"></i>
+                        <i class="fab fa-css3-alt"></i>
                         <i class="fab fa-js"></i>
-                        <br>
-                        <a href="https://aciel1234.github.io/audiovisuales/" target="_blank"><i class="fa-solid fa-link"></i>Preview</a>
                     </div>
+                    <a href="https://aciel1234.github.io/audiovisuales/" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-link"></i> Preview
+                    </a>
+                </article>
 
-                    <div class="card">
-                        <img src="img/web_ventas.jpg" alt="">
-                        <h3>Página de ventas online</h3>
-                        <h4>Lleva tus ventas a todo el mundo</h4>
+                <article class="card">
+                    <img src="img/web_ventas.jpg" alt="Página web de ventas online">
+                    <h3>Página de ventas online</h3>
+                    <h4>Lleva tus ventas a todo el mundo</h4>
+                    <div class="tech">
                         <i class="fab fa-html5"></i>
-                        <i class="fab fa-css"></i>
+                        <i class="fab fa-css3-alt"></i>
                         <i class="fab fa-js"></i>
-                        <br>
-                        <a href="projects/Web-de-ventas/index.html" target="_blank"><i class="fa-solid fa-link"></i>Preview</a>
                     </div>
+                    <a href="projects/Web-de-ventas/index.html" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-link"></i> Preview
+                    </a>
+                </article>
 
-
-                </div>
             </div>
+        </section>
 
-            <div class="container habilidades">
-                <header class="container-header">
-                        <h3>Habilidades</h3>
-                </header>
-                <div class="habilidades-icons">
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css"></i>
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-php"></i>
-                    <i class="fa fa-database"></i>
-                </div>
+        <!-- HABILIDADES -->
+        <section class="container habilidades" id="habilidades">
+            <header class="container-header">
+                <h3>Habilidades</h3>
+            </header>
+            <div class="habilidades-icons">
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                <i class="fab fa-php" title="PHP"></i>
+                <i class="fa fa-database" title="Bases de datos"></i>
             </div>
+        </section>
 
-            <div class="container trayectoria">
-                <header class="container-header">
-                    <h3>Experiencia laboral</h3>
-                </header>
-                <div class="point"></div>
-                <div class="recta">
+        <!-- EXPERIENCIA -->
+        <section class="container trayectoria" id="experiencia">
+            <header class="container-header">
+                <h3>Experiencia laboral</h3>
+            </header>
+
+            <div class="timeline">
+                <div class="item">
                     <div class="contenido-recta">
                         <h3>Informático</h3>
-                        <h4>Mypime de venta de artículos</h4>
-                        <time>Actualmente...</time>
+                        <h4>MIPYME de venta de artículos</h4>
+                        <time datetime="2025">Actualmente</time>
                     </div>
-                    <div class="contenido-info">
-                        Responsable en el desarrollo de una aplicación web para la gestión de inventario. Aumento de la gestión y seguimiento de la mercancía del almacén en un 100%.
-                    </div>
+                    <p class="contenido-info">
+                        Responsable del desarrollo de una aplicación web para la gestión de inventario. Mejoré el control y seguimiento del almacén en un 100%.
+                    </p>
                 </div>
 
-                <div class="point"></div>
-                <div class="recta">
+                <div class="item">
                     <div class="contenido-recta">
-                        <h3>Especialista A. en Comunicación y Marketing</h3>
+                        <h3>Especialista A en Comunicación y Marketing</h3>
                         <h4>Empresa Provincial Alimentaria Camagüey</h4>
-                        <time>2024-2025</time>
+                        <time datetime="2024-2025">2024 - 2025</time>
                     </div>
-                    <div class="contenido-info">
-                        Responsable de la Comunicación Institucional, Gestión de Archivo y Atención a la Población en la Empresa. Con la implementación de la página web, aumentó un 30% la gestión de información. Se implantaron medidas de integración continua y despliegue para todas las Unidades de Base
-                    </div>
+                    <p class="contenido-info">
+                        Responsable de la comunicación institucional, gestión documental y atención a la población. La implementación del sitio web incrementó en un 30% la eficiencia informativa e impulsó la integración tecnológica en todas las unidades de base.
+                    </p>
                 </div>
             </div>
         </section>
-        <footer>
-            <p>©Aciel Olivera García. 2025</p>
-            <div class="icons">
-                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </footer>
+    </main>
+
+    <footer>
+        <p>© 2025 Aciel Olivera García</p>
+        <div class="icons">
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
