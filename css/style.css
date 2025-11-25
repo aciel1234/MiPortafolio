@@ -235,6 +235,10 @@ body {
   font-size: 50px;
   margin: 20px;
 }
+.habilidades i img {
+  width: 60px;
+  transform: translateY(9px);
+}
 
 /* TRAYECTORIA */
 .trayectoria .timeline {
