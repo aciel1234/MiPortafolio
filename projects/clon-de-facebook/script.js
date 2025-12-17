@@ -1,4 +1,4 @@
-// Mostrar/ocultar el botón según el scroll
+// Mostrar/ocultar el botón de subir según el scroll
 document.addEventListener("DOMContentLoaded", function () {
     const btn = document.getElementById("btnSubir");
 

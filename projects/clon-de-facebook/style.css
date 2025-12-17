@@ -189,21 +189,21 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
-.main-container .publication .publication-content {
+.publication-content {
   display: flex;
   flex-direction: column;
 }
-.main-container .publication .publication-content .publication-header {
+.publication-header {
   display: flex;
   padding: 0.5rem 1rem;
   align-items: center;
 }
-.main-container .publication .publication-content .publication-header img{
+.publication-header img{
   width: 60px;
   border-radius: 50%;
   margin-right: 15px;
 }
-.main-container .publication .publication-content .publication-header .name-hour p {
+.name-hour p {
   font-weight: lighter;
 }
 .publication-details {
@@ -247,8 +247,8 @@ body {
 
 .publication-description button:hover {
   background: var(--bg-hover);
+  cursor: pointer;
 }
-
 
 /* ===== CONTACTOS ===== */
 .people-online {
