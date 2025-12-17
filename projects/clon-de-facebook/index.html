@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clon de Facebook</title>
+  <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEU6VZ/////5+vwxTpxsfrQpSZqhrM/j5vAjR5o3U56jrcxQZqcPO5Tv8fdYbq01UZ2FlMFDXKPp6/OTn8SwuNW2vtjFzODS2OcbQZZld69yg7jb3ut6irtGYKW9xd3K0OGRBYFmAAAB80lEQVR4nO3a23KDIBAGYCriWfEQNUar7/+WddreJAZDh7Aw0//PLRff7ODKEhlDEARBEARBEOQfJmXps7gDSSE4a/JncaSSosi7Sz+M8THtdnVB4mzK4g9l4sIBid/mQE1ygeJsGc9ELlD8cz2tkgNUKsKTveQGlYqlfG2iRaUi0yARo0T9cjuRo/hNz0SJkpXGHidGSbZpmghRvNY10aHSZvYPxTttE2GldLomMeoPO4oOlWg/enQombf+objmC4YW1Z8qgvIuI80ZXZwcNoO1Dqu75JLClHL1a2/IBZfyd+CTPz8KE2ONcp/3+6HdTWSuap2DICrLMXxSPHxl6KpOOypUoFaH9wZKVOeuUGrU4iEqcLilgAIKKKCAAgoooL4jxWOuiuNwMF0Pa/dYOLbzMDpENYtejkujKKver0r07qVPUnuICiYPUa2FPyGNUfPbSW9AjRb6hDFqFR6iIh8rtVhonsYoC73THNV4iCqZhZsYU9QsPUQNFjqCMapPPERFHlYqqG2cRg1R5c3GfbEpykbvNEXFVj7pMkRtjQWTKaq3crVuiMqsjIKia4+f2SkET1Za6Qj74Jc8plANo1VxWEs2M3swtgMFFFBAAQUUUEABBRRQQAEFFFBAAQUUUEABBRRQQAEFFFBAAQUUUN6gvgC5ailiRlwR7QAAAABJRU5ErkJggg==" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.php">
+        <i class="fab fa-facebook"></i>
+      </a>
+
+      <div class="search">
+        <input type="search" name="search" id="search" placeholder="Search...">
+        <i class="fa fa-search"></i>
+      </div>
+    </div> 
+
+    <nav class="sites">
+      <ul>
+        <li><a href="#" title="Home"><i class="fa fa-home active"></i></a></li>
+        <li><a href="#" title="Groups"><i class="fa-solid fa-layer-group"></i></a></li>
+        <li><a href="#" title="Friends"><i class="fa-solid fa-people-group"></i></a></li>
+      </ul>
+    </nav>
+
+    <nav class="account">
+      <ul>
+        <li><a href="#" title="Menu"><i class="fa-solid fa-table-cells"></i></a></li>
+        <li><a href="#" title="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a></li>
+        <li><a href="#" title="Notifications"><i class="fa-solid fa-bell"></i></a></li>
+        <li><button title="Account"><img src="dev.jpg" alt="account settings image"></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container">
+    <article>
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-user-group"></i> Friends</a></li>
+          <li><a href="#"><i class="fa-solid fa-camera-retro"></i> Records</a></li>
+          <li><a href="#"><i class="fa-solid fa-bookmark"></i> Saved</a></li>
+          <li><a href="#"><i class="fa-solid fa-layer-group"></i> Groups</a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook-messenger"></i> Messenger</a></li>
+          <li><a href="#"><i class="fa-solid fa-calendar-check"></i> Events</a></li>
+        </ul>
+      </nav>
+    </article>
+
+    <div class="main-container">
+      <div class="publication">
+        <div class="publication-content">
+          <header class="publication-header">
+            <img src="dev.jpg" alt="avatar">
+            <div class="name-hour">
+              <h3>Aciel Olivera García</h3>
+              <p>16/12/2025 02:43:16 PM</p>
+            </div>
+          </header>
+          <div class="publication-details">
+            <p>Contenido descriptivo opcional que hace la persona.</p>
+            <img src="chicafeliz2.jpg" alt="publication image">
+          </div>
+          <div class="actions">
+            <p type="text">Likes 0</p>
+            <p type="text">Comments 0</p>
+          </div>
+        </div>
+        <div class="publication-description">
+          <button class="likes">LIKE</button>
+          <button class="comments">COMENTARIOS</button>
+        </div>
+      </div>
+
+      <div class="publication">
+        <div class="publication-content">
+          <header class="publication-header">
+            <img src="dev.jpg" alt="avatar">
+            <div class="name-hour">
+              <h3>Aciel Olivera García</h3>
+              <p>16/12/2025 02:43:16 PM</p>
+            </div>
+          </header>
+          <div class="publication-details">
+            <p>Contenido descriptivo opcional que hace la persona.</p>
+            <img src="chicafeliz.jpg" alt="publication image">
+          </div>
+          <div class="actions">
+            <p type="text">Likes 0</p>
+            <p type="text">Comments 0</p>
+          </div>
+        </div>
+        <div class="publication-description">
+          <button class="likes">LIKE</button>
+          <button class="comments">COMENTARIOS</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="people-online">
+      <p><strong>Birthday</strong></p>
+      <div class="birth">
+        <i class="fa-solid fa-cake-candles"></i>
+        <p>Hoy es el cumpleaños de <strong>Aciel Olivera García</strong> y <strong>4 personas más</strong></p>
+      </div>
+      <hr>
+      <div class="contactos">
+        <p><strong>Contacts</strong></p>
+        <div class="card">
+          <img src="dev.jpg" alt="person image">
+          <p>Aciel Olivera García</p>
+        </div>
+
+        <div class="card">
+          <img src="dev.jpg" alt="person image">
+          <p>Aciel Olivera García</p>
+        </div>
+
+        <div class="card">
+          <img src="dev.jpg" alt="person image">
+          <p>Aciel Olivera García</p>
+        </div>
+
+        <div class="card">
+          <img src="dev.jpg" alt="person image">
+          <p>Aciel Olivera García</p>
+        </div>
+
+        <div class="card">
+          <img src="dev.jpg" alt="person image">
+          <p>Aciel Olivera García</p>
+        </div>
+
+        <div class="card">
+          <img src="dev.jpg" alt="person image">
+          <p>Aciel Olivera García</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
