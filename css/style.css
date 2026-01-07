@@ -104,12 +104,12 @@ body {
 
 .imagen {
   float: left;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .imagen img {
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
   border-radius: var(--radius);
 }
 
@@ -193,6 +193,7 @@ body {
   font-weight: 400;
   margin-bottom: 10px;
   color: var(--color-dark);
+  text-align: left;
 }
 
 .card .tech i {
