@@ -171,6 +171,9 @@ body {
   border-radius: var(--radius);
   padding: 1rem;
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
